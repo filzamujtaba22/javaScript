@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chap 14-16</title>
+</head>
+<body>
+    <script>
+    //     //******************task 1**********************
+    //     var student =[];
+    //     //******************task 2**********************
+    //     var studentName =["alia", "Filza", "Zainab"];
+    //     //******************task 3**********************
+    //     var studentID = [66, 02, 72];
+    //     //******************task 4**********************
+    //     var conditions = [true, false];
+    //     //******************task 5**********************
+    //     var mixarray = ["filza", 02, true];
+    //     //******************task 6**********************
+    //     var qualifications = ["SSC","HSC","BSC","BS","MS","BCOM","M-phil","P-hd"];
+    //     document.write("<h1>Qualification: </h1>");
+    //     document.write("<h2> 1) " + qualifications[0] + "</h2>");
+    //     document.write("<h2> 2) " + qualifications[1] + "</h2>");
+    //     document.write("<h2> 3) " + qualifications[2] + "</h2>");
+    //     document.write("<h2> 4) " + qualifications[3] + "</h2>");
+    //     document.write("<h2> 5) " + qualifications[4] + "</h2>");
+    //     document.write("<h2> 6) " + qualifications[5] + "</h2>");
+    //     document.write("<h2> 7) " + qualifications[6] + "</h2>");
+    //     document.write("<h2> 8) " + qualifications[7] + "</h2>");
+    //     //******************task 7**********************
+    //     var studentNames = ["Micheal","Johan","Tony"];
+    //     var studentScore = [450, 300, 350];
+    //     var total = 500;
+    //     var student1_percentage = studentScore[0]/total*100;
+    //     var student2_percentage = studentScore[1]/total*100;
+    //     var student3_percentage = studentScore[2]/total*100;
+        
+
+    //     document.write("<h3> Score of  " + studentNames[0] + " is " + studentScore[0] + ". percentage: " + student1_percentage + "% </h3>");
+    //     document.write("<h3> Score of  " + studentNames[1] + " is " + studentScore[1] + ". percentage: " + student2_percentage + "% </h3>");
+    //     document.write("<h3> Score of  " + studentNames[2] + " is " + studentScore[2] + ". percentage: " + student3_percentage + "% </h3>");
+        
+        
+    //     //******************task 8**********************
+    //     //***a******
+    //     var colors = ["red", "blue", "green", "orange"];
+    //     alert("the colors I have are: " + colors);
+    //     var userInput = prompt ("What color you want to enter in the begning of array :");
+    //     colors.unshift(userInput );
+    //     alert(colors);
+    //    //***b******
+    //    var colors2 = ["red", "blue", "green", "orange"];
+    //     alert("the colors I have are: " + colors2);
+    //     var userInput = prompt ("What color you want to enter in the end of array :");
+    //     colors2.push(userInput );
+    //     alert(colors2);
+    //     //  *****c******
+    //    var colors3 = ["red", "blue", "green", "orange"];
+    //     alert("the colors I have are: " + colors3);
+    //     alert("Adding Two color at the beginning");
+        
+    //     colors3.splice(0, 0 ,"black", "white");
+    //     document.write(colors3);
+    //     // *****d******
+    //     var colors4 = ["red", "blue", "green", "orange"];
+    //     alert("the colors I have are: " + colors4);
+    //     alert("deleting first color from the beginning");        
+    //     colors4.shift();
+    //     document.write(colors4 + '<br>');
+    //   //*****e******
+    //     var colors5 = ["red", "blue", "green", "orange"];
+    //     alert("the colors I have are: " + colors5);
+    //     alert("deleting first color from the end");        
+    //     colors5.pop();
+    //     document.write(colors4 + '<br>');
+    //     //*****f******
+    //     var colors6 = ["red", "blue", "green", "orange"];
+    //     alert("the colors I have are: " + colors6);
+    //     var userIndex = prompt("At which index you want to add a color?");
+    //     var colorName = prompt("Enter color name: ");
+
+    //     colors6[userIndex] = colorName; 
+    //     alert(colors6 );
+    //     //*****G******
+    //     var colors7 = ["red " , "blue " ,"green " , "yellow " ,"orange " , "pink "];
+    //     alert("At which index you want to delete a color or colors? \n " + colors7); 
+    //     var indexNumber = +prompt("Enter index number that you want to delete.");
+    //     var howManyColors = +prompt("How many colors you want to delete?");
+    //     colors7.splice(indexNumber, howManyColors);
+    //     alert(colors7);
+
+     //******************task 9**********************
+     var cities = ["karachi","Lahore", "Islamabad","Quetta","peshawar"];
+     document.write(cities + "<br>");
+     var selectedcities = cities.slice(2,4);
+     document.write("selected cities :" + selectedcities +"<br>");
+    
+     //*********************task 10*******
+     var myarray = ["This" , "is" ,"my" , "cat"];
+    document.write(" Array: " + myarray + "</br>");
+
+    myarray = myarray.join(" ");
+    document.write("String: " + myarray + "</br>");
+
+     //*********************task 11  FIFO*******
+
+     var devices = ["Keyboard" , "Mouse" , "Printer" , "Monitor"];
+    document.write("<h2>Devices: <br>" + devices + "</h2>");
+    document.write("<h2> FIFO </h2>");
+
+    var firstout = devices.shift();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+
+    var firstout = devices.shift();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+
+    var firstout = devices.shift();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+
+    var firstout = devices.shift();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+
+    //*********************task 12  LIFO*******
+
+    var devices = ["Keyboard" , "Mouse" , "Printer" , "Monitor"];
+    document.write("<h2>Devices: <br>" + devices + "</h2>");
+    document.write("<h2> LIFO </h2>");
+
+    var firstout = devices.pop();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+
+    var firstout = devices.pop();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+
+    var firstout = devices.pop();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+
+    var firstout = devices.pop();
+    document.write("<h5> Out: <br>" + firstout +"</h5>");
+    //*********************task 13*******
+    var mobiles=["Apple","Samsung", "Motorola", "Nokia", "Sony" , "Haier"];
+    document.write(`
+        <select> 
+            <option>`+mobiles[0]+` </option>
+            <option>`+mobiles[1]+` </option>
+            <option>`+mobiles[2]+` </option>
+            <option>`+mobiles[3]+` </option>
+            <option>`+mobiles[4]+` </option>
+            <option>`+mobiles[5]+` </option>
+            </select>
+    `);
+
+        </script>
+</body>
+</html>

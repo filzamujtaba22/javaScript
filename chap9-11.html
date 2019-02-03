@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //     // question 1
+    //     var city=prompt("Enter your city name: ");
+    //      if(city=='karachi'){
+    //          alert("welcome to the city of lights");
+    //      }
+    //     else{
+    //         alert('welcome');
+    //     } 
+    //     // question 2
+    //    var gender=prompt("Enter your Gender: ");
+    //      if(gender=='male'){
+    //          alert("Good Morning sir");
+    //      }
+    //     else{
+    //         alert('Good Morning Maam');
+    //     } 
+    //     // question 3
+    //     var color=prompt("Enter any trafic light color: ");
+    //      if(color=='red'){
+    //          alert("MUST STOP");
+    //      }
+    //     else if(color=='yellow'){
+    //         alert('Ready to move');
+    //     } 
+    //     else if(color=='green'){
+    //         alert('Move Now');
+    //     } 
+    //     else{
+    //         alert('Invalid');
+    //     }
+    //     // question 4
+    //     var fuel=prompt("please enter your remaining fuel");
+    //      if(fuel <= 0.25){
+    //          alert("Please refill the fuel in your car");
+    //      }
+    //     else{
+    //         alert('you have enough fuel');
+    //     }
+    //     // question 5
+    //         //a
+    //         var a = 4;
+    //         if (++a === 5){
+    //         alert("given condition for variable a is true");
+    //         }
+    //         //b
+    //         var b = 82;
+    //         if (b++ === 83){
+    //         alert("given condition for variable b is true");
+    //         }
+    //         //c
+    //          var c = 12;
+    //         if (c++ === 13){
+    //         alert("condition 1 is true");
+    //         }
+    //         if (c === 13){
+    //         alert("condition 2 is true");
+    //         }
+    //         if (++c < 14){
+    //         alert("condition 3 is true");
+    //         }
+    //         if(c === 14){
+    //         alert("condition 4 is true");
+    //         }
+    //         //d
+    //          var materialCost = 20000;
+    //         var laborCost = 2000;
+    //         var totalCost = materialCost + laborCost;
+    //         if (totalCost === laborCost + materialCost){
+    //         alert("The cost equals");
+    //         }
+    //         //e
+    //          if (true){
+    //         alert("True");
+    //         }
+    //         if (false){
+    //         alert("False");
+    //         }          
+
+    //         //f
+    //          if("car" < "cat"){
+    //         alert("car is smaller than cat");
+    //         }
+
+        // question 6
+        // var sub1mark=+prompt("enter mark in subject 1");
+        // var sub2mark=+prompt("enter mark in subject 2");
+        // var sub3mark=+prompt("enter mark in subject 3");
+        // var total=300;
+        // var totalobtained= sub1mark + sub2mark +sub3mark;
+        // var perc= (totalobtained/total)*100;
+        // document.write("<h1> Mark sheet</h1> </br>")
+        // document.write("Total Obtained: "+ totalobtained+ "</br>")
+        // document.write("Total marks: "+ total + "</br>")
+        // document.write("percentage: "+perc +" % <br/>")
+
+        // if(perc >= 80){
+        //     document.write("A1 GRADE excellent Job !")
+        // }
+        // else if(perc >= 70){
+        //     document.write("A GRADE Good Job !")
+        // }
+        // else if(perc >= 60){
+        //     document.write("B GRADE you need to improve !")
+        // }
+        // else{
+        //     document.write("FAIL")
+        // }
+        // question 7
+        var mynum =6;
+        var userNum = prompt("GUESS any Number form (1 to 10)");
+        if(userNum == mynum){
+            document.write("Bingo! correct guess");
+        }
+        else if(userNum == mynum+1){
+            document.write("Close enough");
+        }
+        else{
+            document.write("wrong Guess");
+        }
+        // question 8
+
+        var enteredNum =+prompt("enter the number check whether it is Divisor of 3 or not");
+        var result = enteredNum % 3;
+        if(result == 0){
+            document.write("<BR/>"+ "yes it is divisible by 3");
+        }
+        else {
+            document.write("<BR/>"+ "It isn't Divisble by 3");
+        }
+        // question 9
+        var  Check = +prompt("Enter the number to check even or odd");
+        var resultcheck = Check % 2;
+        if(resultcheck == 0){
+            document.write(" <br> Its an Even Num");
+        }
+        else{
+            document.write("<br> Its an Odd Num");
+        }
+        //ques 10
+        var temperature = prompt("Enter current temperature");
+
+        if(temperature >=40){
+            alert("It is too hot outside.");
+        }
+        else if(temperature >=30){
+            alert("The Weather today is Normal.");
+        }
+        else if(temperature >=20){
+            alert("Today’s Weather is cool.");
+        }
+        else if(temperature >=10){
+            alert("“OMG! Today’s weather is so Cool.");
+        }
+        //ques 11
+        var num1 = Number(prompt("Enter 1st number"));
+        var operator = prompt("Enter operator + - * / or %");
+        var num2 = Number(prompt("Enter 2nd number"));
+        var answer;
+
+        if(operator == "+"){
+            answer = num1 + num2;
+        }
+        else if(operator == "-"){
+            answer = num1 - num2;
+        }
+        else if(operator == "*"){
+            answer = num1 * num2;
+        }
+        else if(operator == "/"){
+            answer = num1 / num2;
+        }
+        else if(operator == "%"){
+            answer = num1 % num2;
+        }
+        alert(num1 + " " + operator + " " + num2 + " = " + answer);
+
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
